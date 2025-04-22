@@ -19,4 +19,4 @@ jobs:
         uses: docker-practice/actions-setup-docker@master
       - name: Build with Maven
         run: mvn verify -Pdocker
-        working-directory: com.examples.hellodocker
+        working-directory: hellodocker
