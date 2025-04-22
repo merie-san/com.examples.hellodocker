@@ -16,10 +16,6 @@ jobs:
          uses: actions/setup-java@v1
          with:
             java-version: 1.8
-      -  name: Docker config
-         run: sc config docker binpath="dockerd.exe --run-service -H tcp://localhost:2375"
-      -  name: Docker restart
-         run: restart-service *docker*
       -  name: Docker info
          run: docker info
       -  name: Build with Maven
